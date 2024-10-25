@@ -1,3 +1,67 @@
+#video notes
+language = 'Python'
+
+if language == 'Python':
+   print('conditional was true')
+
+#Comparisons :
+#Equal:             ==
+#Not Equal:         !=
+#Greater Than:      >
+#Less Than:         <
+#Greater or Equal to:>=
+#Less of Equal:     <=
+#Object Identity:   is
+
+
+language = 'Java'
+
+if language == 'Python':
+   print('Language is Python')
+elif language == 'Java':
+   print('language is Java')
+elif languge == 'JavaScript':
+    print("language is JavaScript")
+else:
+   print('no match')
+
+
+user = 'Admin'
+
+logged_in = False
+if not logged_in:
+   print('Please Log in')
+
+if user == 'Admin' or logged_in:
+   print('Admin Page')
+else:
+   print('Bad Creds')
+
+a = [1, 2, 3]
+b = [1, 2, 3]
+b = a
+
+print(id(a))
+print(id(b))
+print(a is b)
+
+#False Values:
+#False
+#None
+#Zero of any numeric type  #Number higher than 0 equals true
+#Any empty sequence. For example . '', (), []
+#Any empty mapping. For example, {}
+
+condition = 0 
+if condition:
+   print('Evaluated to True')
+else:
+   print('Evaluated to False')
+
+
+
+
+
 
 ############################################################################
 # Boolean expressions are statements that can be either True or False. In Python, the boolean data type is represented by the built-in data type bool.
@@ -42,6 +106,8 @@
 
 # print(5 >= 6)  # False
 # print(6 >= 6)  # True
+   
+################################################################################################
 # 2. Logical Operators:
 # These operators are used to combine conditional statements:
 
@@ -49,17 +115,19 @@
 
 # x = 5
 # print(x > 3 and x < 10)  # True
-# age = 18
-# print(age >= 18 and age < 65)  # True
-# print(age < 18 or age >= 65)   # False
+age = 18
+print(age >= 18 and age < 65)  # True
+print(age < 18 or age >= 65)   # False
 # or: Returns True if at least one of the statements is true.
 
 # x = 5
 # print(x > 3 or x > 10)  # True
 # not: Reverse the result, returns False if the result is true.
 
-# x = 5
-# print(not(x > 3 and x < 10))  # False
+#x = 5
+#print(not(x > 3 and x < 10))  # False
+   
+#######################################################################################################
 # 3. Membership Operators:
 # in: Returns True if a sequence with the specified value is present in the object.
 
@@ -72,25 +140,36 @@
 # 4. Identity Operators:
 # is: Returns True if both variables are the same object.
 
-# x = [1, 2, 3]
-# y = [1, 2, 3]
-# z = x
-# print(x is z)  # True, because z is the same object as x
-# print(x is y)  # False, because x and y are not the same objects
+#x = [1, 2, 3]
+#y = [1, 2, 3]
+#z = x
+#print(x is z)  # True, because z is the same object as x
+#print(x is y)  # False, because x and y are not the same objects
 # is not: Returns True if both variables are not the same object.
 
 # x = [1, 2, 3]
 # y = [1, 2, 3]
 # print(x is not y)  # True
-# fruits = ['apple', 'banana', 'cherry']
-# print('apple' in fruits)      # True
-# print('grape' not in fruits)  # True
+fruits = ['apple', 'banana', 'cherry']
+print('apple' in fruits)      # True
+print('grape' not in fruits)  # True
 # a = [1, 2, 3]
 # b = [1, 2, 3]
 # c = a
 # print(a is c)       # True
 # print(a is not b)   # True
 # Remember, every boolean expression will evaluate to either True or False, and understanding this concept is fundamental for decision-making in programming.
+
+
+
+
+
+
+
+
+
+
+
 
 
 #######################boolean expressions challenges#####################
